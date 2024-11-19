@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import MobileNavigation from "./MobileNavigation";
 import Theme from "./Theme";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
           src="/images/site-logo.svg"
           width={23}
           height={23}
-          alt="Dev OverFlow Logo"
+          alt="DevFlow Logo"
         />
 
         <p className="h2-bold font-space-grotesk text-dark-100 dark:text-light-900 max-sm:hidden">
@@ -24,6 +25,8 @@ const Navbar = () => {
 
       <div className="flex-between gap-5">
         <Theme />
+
+        <MobileNavigation />
       </div>
     </nav>
   );
